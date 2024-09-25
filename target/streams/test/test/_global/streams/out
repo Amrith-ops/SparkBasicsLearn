@@ -1,0 +1,23 @@
+[debug] Running TaskDef(spark.learn.HelloSparkTest, org.scalatest.tools.Framework$$anon$1@10537fb3, false, [SuiteSelector])
+[info] HelloSparkTest:
+[info] spark.learn.HelloSparkTest *** ABORTED ***
+[info]   org.apache.spark.SparkException: Could not parse Master URL: 'local[3'
+[info]   at org.apache.spark.SparkContext$.org$apache$spark$SparkContext$$createTaskScheduler(SparkContext.scala:2924)
+[info]   at org.apache.spark.SparkContext.<init>(SparkContext.scala:548)
+[info]   at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2578)
+[info]   at org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$5(SparkSession.scala:896)
+[info]   at scala.Option.getOrElse(Option.scala:189)
+[info]   at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:887)
+[info]   at spark.learn.HelloSparkTest.beforeAll(HelloSparkTest.scala:15)
+[info]   at org.scalatest.BeforeAndAfterAll.liftedTree1$1(BeforeAndAfterAll.scala:212)
+[info]   at org.scalatest.BeforeAndAfterAll.run(BeforeAndAfterAll.scala:210)
+[info]   at org.scalatest.BeforeAndAfterAll.run$(BeforeAndAfterAll.scala:208)
+[info]   ...
+[info] Run completed in 5 seconds, 986 milliseconds.
+[info] Total number of tests run: 0
+[info] Suites: completed 0, aborted 1
+[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0
+[info] *** 1 SUITE ABORTED ***
+[error] Error during tests:
+[error] 	spark.learn.HelloSparkTest
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful
