@@ -2,7 +2,7 @@ package sparks.learn
 
 import org.apache.spark.sql.SparkSession
 import org.scalatest.{BeforeAndAfterAll, FunSuite}
-import spark.learn.HelloSpark.{readDataFrame,transformDf}
+import sparks.learn.HelloSpark.{readDataFrame,transformDf}
 
 class HelloSparkTest extends FunSuite with BeforeAndAfterAll{
 
